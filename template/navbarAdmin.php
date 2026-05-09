@@ -12,10 +12,7 @@ require_once '../../includes/helpers.php';
 
         <ul class="nav-links">
             <p>Welcome, <?php echo $_SESSION['name'] ?>!</p>
-            <form action="../../includes/logout.php" method="post">
             <input type="hidden" name="role" value="admin">
-            <button type="submit">Logout</button>
-            </form>
         </ul>
 
         <button class="hamburger-icon" onclick="onToggle()">
@@ -29,6 +26,10 @@ require_once '../../includes/helpers.php';
         <ul>
             <li><a href="../admin/dashboard.php">Dashboard</a></li>
             <li><a href="../admin/add_items.php">Add Items</a></li>
+            
+            <form action="../../includes/logout.php" method="post">
+                <button type="submit">Logout</button>
+            </form>
         </ul>
     </aside>
 </div>
