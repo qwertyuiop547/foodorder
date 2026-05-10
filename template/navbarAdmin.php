@@ -38,7 +38,7 @@ require_once '../../includes/helpers.php';
 
 <script>
     function onToggle() {
-    const sidebar = document.querySelector('.sidebar');
-    if (sidebar) sidebar.classList.toggle('active');
-}
+        const sidebar = document.querySelector('.sidebar');
+        if (sidebar) sidebar.classList.toggle('active');
+    }
 </script>

@@ -1,11 +1,28 @@
 <nav class="navbar">
-    <div class="nav-container">
-        <h2>FoodPulse</h2>
+    <div class="nav-container1">
+        <div class="logo-header">
+            <h2>FoodPulse</h2>
+        </div>
 
-        <ul class="nav-links">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="menu.php">Order</a></li>
-            <li><a href="login.php">Login</a></li>
-        </ul>
+        <div class="dropdown">
+            <button class="hamburger-icon" id="toggleMenu">
+                ☰
+            </button>
+        
+            <ul class="nav-links" id="dropdownMenu">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="menu.php">Order</a></li>
+                <li><a href="login.php">Login</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
+
+<script>
+    const toggleBtn = document.getElementById('toggleMenu');
+    const dropdownMenu = document.getElementById('dropdownMenu');
+
+    toggleBtn.addEventListener('click', function() {
+        dropdownMenu.classList.toggle('show');
+    });
+</script>
